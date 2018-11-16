@@ -112,7 +112,7 @@ html {
 }
 
 body.page-template-page-fullsingle-split {
-  background-color: #061C30;
+  background-color: #130f09;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -122,7 +122,7 @@ body.page-template-page-fullsingle-split {
   animation: fadein 2s;
 }
 body.page-template-page-fullsingle-split p {
-  color: #848d96;
+  color: #fefff9;
 }
 
 .fs-split {
@@ -191,10 +191,10 @@ body.page-template-page-fullsingle-split p {
   line-height: 16px;
   margin-bottom: 40px;
   letter-spacing: 0.4px;
-  color: #47bec7;
+  color: #fef9bd;
 }
 .split-intro .tagline {
-  color: #CCCCCC;
+  color: #fdf8bc;
 }
 
 .split-bio {
@@ -217,12 +217,12 @@ body.page-template-page-fullsingle-split p {
   line-height: inherit;
 }
 .split-bio a {
-  color: #848d96;
+  color: #fcf7bb;
   transition-duration: 0.5s;
-  border-bottom: 1px dotted #848d96;
+  border-bottom: 1px dotted #fcf7bb;
 }
 .split-bio a:hover {
-  color: #CA486d;
+  color: #ffd77b;
   transition-duration: 0.1s;
   border-bottom: 1px dotted #CA486d;
 }
@@ -341,7 +341,7 @@ body.page-template-page-fullsingle-split p {
   font-size: 11px;
   line-height: 11px;
   margin-bottom: 31px;
-  color: #848d96;
+  color: #fdf8bc;
   letter-spacing: 2px;
   opacity: 0.5;
 }
@@ -351,7 +351,7 @@ body.page-template-page-fullsingle-split p {
   margin-bottom: 12px;
 }
 .split-lists .split-list ul li a {
-  color: #848d96;
+  color: #fdf8bc;
   transition-duration: 0.5s;
 }
 .split-lists .split-list ul li a:hover {

@@ -1,7 +1,7 @@
 # Site settings
-baseURL = "https://frosty-lovelace-731750.netlify.com/"
+baseURL = "//example.org"
 languageCode = "en-US"
-title = "Lidian de Weert — Bass player in Tokyo, Japan"
+title = "Lidian de Weert - Bass player"
 theme = "hugo-split-theme"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
@@ -15,12 +15,12 @@ copyright = "&copy;2018 Lidian de Weert"
 
   # Metadata for search engines and social sharing
   author = "Lidian de Weert"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+  description = "All-round electric bass player in Tokyo, Japan."
   shareImage = "images/social.jpg"
   twitterHandle = "onepagelove"
 
   # Favicon
-  favicon = "favicon.ico"
+  favicon = "bass-clef-multi-size.ico"
 
   # Section - Visual
   [params.visual]
@@ -28,7 +28,7 @@ copyright = "&copy;2018 Lidian de Weert"
     # Image
     [params.visual.image]
       enable = true
-      file = "img/lidian.jpg"
+      file = "images/lidian-color.jpg"
       position = "center center"
 
     # Video
