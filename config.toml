@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "//example.org"
+baseURL = "https://frosty-lovelace-731750.netlify.com/"
 languageCode = "en-US"
 title = "Lidian de Weert - Bass player"
 theme = "hugo-split-theme"
