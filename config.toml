@@ -1,97 +1,155 @@
 # Site settings
-baseURL = "https://frosty-lovelace-731750.netlify.com/"
-languageCode = "en-US"
-title = "Lidian de Weert - Bass player"
-theme = "hugo-split-theme"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+baseurl = "https://lidian.rocks" #without ending slash
+languageCode = "en-us"
+title = "Lidian de Weert — Bass player"
+theme = "hugo-identity-theme"
+themesDir = "themes"
+
+# Disable unnecessary kinds
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
 
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-
-# Copyright
-copyright = "&copy;2018 Lidian de Weert"
+#googleAnalytics = "UA-XXXXX-Y"
 
 [params]
 
-  # Metadata for search engines and social sharing
-  author = "Lidian de Weert"
-  description = "All-round electric bass player in Tokyo, Japan."
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  # Images settings
+  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+  # You may place your images in corresponding folders and then set only filenames below to
+  # change page's appearance
 
-  # Favicon
-  favicon = "bass-clef-multi-size.ico"
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple.png"
 
-  # Section - Visual
-  [params.visual]
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
 
-    # Image
-    [params.visual.image]
-      enable = true
-      file = "images/lidian-color.jpg"
-      position = "center center"
+  # Link custom assets relative to /static
+  #custom_js  = [""]
+  #custom_css = ["background.css", "icons.css"]
 
-    # Video
-    [params.visual.video]
-      enable = false
-      mute = true
-      file = "videos/background.mp4"
-      # youtubeId = "dk9uNWPP7EA"
+  # Customization switches
+  # Overwrite FontAwesome: see icons.css
+  #custom_icons = true
+  # Overwrite background: see background.css
+  # custom_background = true
 
-  # Links
-  #
-  # Links List #1
-  [[params.links]]
-    [params.links.list1]
-      heading = "Connect"
+  # Personal data
+  [params.personal]
+    # If name is not set, author is used
+    name = "Lidian de Weert"
+    # Avatars can be written to images/avatars/
+    avatar = "jane.jpg"
+    position = "All-round electric bassist"
+    livesIn = "[Tokyo, Japan](#some-maps-url)"
+    # scope = [
+    #     "UX for [member dashboard](#)",
+    #     "Maintainer for [awesome-project](#)",
+    #     "Open Source [community management](#)"
+    #   ]
+    # biography = "blah blah"
 
-      [[params.links.list1.link]]
-        text = "Blog"
-        url = "#"
+  # Contact form settings
 
-      [[params.links.list1.link]]
-        text = "Email"
-        url = "#"
+  [params.contact]
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
 
-      [[params.links.list1.link]]
-        text = "Newsletter"
-        url = "#"
+    email = "info@lidian.rocks"
 
-  # Links List #2
-  [[params.links]]
-    [params.links.list2]
-      heading = "Social"
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
 
-      [[params.links.list2.link]]
-        text = "Twitter"
-        url = "#"
+    #postURL = "https://example.com/mailout/"
 
-      [[params.links.list2.link]]
-        text = "Instagram"
-        url = "#"
+    enable = false
+    title = "Touch Me!"
+    namePlaceholder = "Name"
+    emailPlaceholder = "Email"
+    messagePlaceholder = "Message"
+    buttonText = "Send it"
+    success = "Thank you for contacting us."
+    error = "Message could not be send. Please contact us at "
 
-      [[params.links.list2.link]]
-        text = "Dribbble"
-        url = "#"
+    # Google invisible captcha
+    #[params.contact.captcha]
+    #  sitekey = ""
 
-  # Links List #3
-  [[params.links]]
-    [params.links.list3]
-      heading = "Network"
 
-      [[params.links.list3.link]]
-        text = "Link One"
-        url = "#"
+    # Add optional form fields to identify contact forms.
+    #[[params.contact.fields.hidden]]
+    #  name = "someID"
+    #  value = "example.com"
 
-      [[params.links.list3.link]]
-        text = "Link Two"
-        url = "#"
+    #[[params.contact.fields.hidden]]
+    # Special values for name such as "page" and "site" will be autofilled
+    #  name = "page"
 
-      [[params.links.list3.link]]
-        text = "Link Three"
-        url = "#"
+  # Social settings
+  # You may change these with your social links or add others
 
-  # The original template is released under the Creative Commons Attribution 3.0 License.
-  # Please keep the original attribution link when using for your own project.
-  # If you'd like to use the template without the attribution, you can check out
-  # the license option via the template author's website: https://onepagelove.com/split
+  [[params.social]]
+    title = "Email"
+    icon = "fa-envelope"
+    link = "mailto:info@lidian.rocks"
+    target = "_blank"
+
+  # [[params.social]]
+  #   title = "Twitter"
+  #   icon = "fa-twitter"
+  #   link = "#"
+  #   target = "_blank"
+
+  # [[params.social]]
+  #   title = "Instagram"
+  #   icon = "fa-instagram"
+  #   link = "#"
+  #   target = "_blank"
+
+  # [[params.social]]
+  #   title = "Facebook"
+  #   icon = "fa-facebook"
+  #   link = "#"
+  #   target = "_blank"
+
+  # Footer settings
+  [params.footer]
+    # If copyright is not set, author is used
+    copyright = "Lidian de Weert"
+
+  # Page license
+  [params.license]
+    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    name = "CC-BY-SA-4.0"
+
+  # Credits
+  [[params.credits]]
+    # Title is used as URL text
+    title = "HTML5UP"
+    # Text will be used to explain the credit
+    text = "Design by"
+    link = "https://html5up.net"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
