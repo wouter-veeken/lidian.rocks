@@ -43,8 +43,8 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     # If name is not set, author is used
     name = "Lidian de Weert"
     # Avatars can be written to images/avatars/
-    avatar = "jane.jpg"
-    position = "All-round electric bassist"
+    avatar = "lidian.jpg"
+    position = "八面六臂ベース奏者 <br/> All-round electric bassist "
     livesIn = "[Tokyo, Japan](#some-maps-url)"
     # scope = [
     #     "UX for [member dashboard](#)",
