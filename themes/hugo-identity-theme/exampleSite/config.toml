@@ -1,9 +1,9 @@
 # Site settings
-baseurl = "https://lidian.rocks" #without ending slash
+baseurl = "http://example.org" #without ending slash
 languageCode = "en-us"
-title = "Lidian de Weert"
+title = "Hugo Identity Theme"
 theme = "hugo-identity-theme"
-themesDir = "themes"
+themesDir = "../.."
 
 # Disable unnecessary kinds
 disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
@@ -41,18 +41,18 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
   # Personal data
   [params.personal]
     # If name is not set, author is used
-    name = "Lidian de Weert"
+    name = "Jane Powers"
     # Avatars can be written to images/avatars/
-    avatar = "lidian-avatar.png"
-    position = "Electric bass guitarist"
-    livesIn = "[Tokyo, Japan](#some-maps-url)"
+    avatar = "jane.jpg"
+    position = "Lead Engineer"
+    livesIn = "[Munich, Germany](#some-maps-url)"
     scope = [
-        "Pop & Soul",
-        "Jazz & Latin",
-        "Funk & Fusion"
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
       ]
-#     biography = """Jane Powers is plain awesome. He worked at Corp A and B and is open for new work.
-# Even new lines and other markdown styles are working within the bio."""
+    biography = """Jane Powers is plain awesome. He worked at Corp A and B and is open for new work.  
+Even new lines and other markdown styles are working within the bio."""
 
   # Contact form settings
 
@@ -69,7 +69,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
 
-    email = "lidiandeweert@gmail.com"
+    email = "your@email.com"
 
     # It is possible to substitute formspring with other providers
     # as an example the mailout plugin from caddy.
@@ -79,13 +79,13 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
     #postURL = "https://example.com/mailout/"
 
     enable = false
-    title = "Contact"
+    title = "Touch Me!"
     namePlaceholder = "Name"
     emailPlaceholder = "Email"
     messagePlaceholder = "Message"
     buttonText = "Send it"
-    success = "Thanks for your message! I'll try to get back to you as soon as possible."
-    error = "Uh-oh! There was a problem sending your message. Please contact me at lidiandeweert@gmail.com"
+    success = "Thank you for contacting us."
+    error = "Message could not be send. Please contact us at "
 
     # Google invisible captcha
     #[params.contact.captcha]
@@ -104,28 +104,28 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap",
   # Social settings
   # You may change these with your social links or add others
 
-  # [[params.social]]
-  #   title = "Twitter"
-  #   icon = "fa-twitter"
-  #   link = "#"
-  #   target = "_blank"
+  [[params.social]]
+    title = "Twitter"
+    icon = "fa-twitter"
+    link = "#"
+    target = "_blank"
 
   [[params.social]]
     title = "Instagram"
     icon = "fa-instagram"
-    link = "https://www.instagram.com/lidian_scale/"
+    link = "#"
     target = "_blank"
 
-  # [[params.social]]
-  #   title = "Facebook"
-  #   icon = "fa-facebook"
-  #   link = "https://facebook.com/lidiandeweert"
-  #   target = "_blank"
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook"
+    link = "#"
+    target = "_blank"
 
   # Footer settings
   [params.footer]
     # If copyright is not set, author is used
-    copyright = "Lidian de Weert"
+    copyright = "Innovation inc"
 
   # Page license
   [params.license]
