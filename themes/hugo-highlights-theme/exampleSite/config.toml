@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://lidian.rocks"
+baseurl = "https://www.example.com"
 languageCode = "en-us"
-title = "Lidian de Weert | All-round Electric Bass Player"
+title = "Highlights"
 theme = "hugo-highlights-theme"
 
 # Enter your tracking code to enable Google analytics
@@ -16,8 +16,8 @@ googleAnalytics = ""
 
   # To provide more meta data for search engings feel free to add a few informations.
   # This lines will be inserted as meta tags.
-  name = "Lidian de Weert"
-  description = "All-round Electric Bass Player"
+  name = "Your Name"
+  description = "Your Description"
 
   # For a static site it's not possible to provide a contact form. The contact form uses
   # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
@@ -30,26 +30,26 @@ googleAnalytics = ""
   # - send a dummy email to yourself to confirm your account
   # - click the confirmation link in the email from www.formspree.io
   # - That's all. Enjoy mailing!
-  email = "info@lidian.rocks"
+  email = "your@mail.com"
 
   # If this param is set to true, every section gets an own background image (located at static/images)
   # to change the image you could use the param picture on every section.
   # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
-  backgroundpersection = false
+  backgroundpersection = true
 
   # hero Section
   [params.hero]
     type = "hero"
-    title = "Lidian de Weert"
-    description = "All-round Electric Bass Player"
-    buttontext = "Go"
+    title = "Highlights"
+    description = "a fun litte { responsive } single Pager by [HTML5UP](//html5up.net)"
+    buttontext = "begin"
 
   # about section
   [[params.block]]
     id = "about"
     type = "text"
-    title = "About"
-    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. Scroll down for more about me, my playing and teaching."
+    title = "Who am I"
+    description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic01.jpg"
@@ -58,61 +58,59 @@ googleAnalytics = ""
   [[params.block]]
     id = "skills"
     type = "list"
-    title = "Music"
-    description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back.\n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
+    title = "Stuff I do"
+    description = "Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic02.jpg"
 
     [[params.block.item]]
-    title = "Never Give Up On A Good Thing (George Benson)"
-    postID = "BxzgrwKAqH5"
-    
-    # [[params.block.item]]
-    # icon = "fa-pencil"
-    # title = "Lorem Ipsum"
-    # 
-    # [[params.block.item]]
-    # icon = "fa-code"
-    # title = "Nulla Tempus"
-    # 
-    # [[params.block.item]]
-    # icon = "fa-coffee"
-    # title = "Sed Feugiat"
-    # 
+      icon = "fa-camera-retro"
+      title = "Magna Etiam"
+
+    [[params.block.item]]
+      icon = "fa-pencil"
+      title = "Lorem Ipsum"
+
+    [[params.block.item]]
+      icon = "fa-code"
+      title = "Nulla Tempus"
+
+    [[params.block.item]]
+      icon = "fa-coffee"
+      title = "Sed Feugiat"
 
   # infos section
   [[params.block]]
     id = "infos"
     type = "text"
-    title = "Bass lessons"
-    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons, in English or Dutch, from my home in Tokyo. Use the contact form below to get in touch. \n\nI can help you improve your:\n\n technique<br>timing<br>sight-reading<br>music theory"
+    title = "One more thing"
+    description = "Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum."
     # the picture is stored at static/images/
     picture = "pic03.jpg"
 
- # custom section
-   [[params.block]]
-     id = "important"
-     # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
-     type = "custom"
-     title = "Don't forget"
-     description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
-     # the picture is stored at static/images/
-     picture = "pic04.jpg"
-
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is stored at static/images/
+#    picture = "pic04.jpg"
 
   # contact form
   [[params.block]]
     id = "contact"
     type = "contact"
-    title = "Contact"
+    title = "Get in Touch"
     picture = "pic05.jpg"
 
     [params.block.form]
       name = "Name"
-      email = "Email address"
+      email = "Your Email"
       message = "Your Message"
-      buttontext = "Send"
+      buttontext = "send message"
 
   # footer section
   # this section includes last block and social icons
