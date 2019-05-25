@@ -49,7 +49,7 @@ googleAnalytics = ""
     id = "about"
     type = "text"
     title = "About"
-    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. Scroll down for more about me, my playing and teaching."
+    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. Scroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic01.jpg"
@@ -59,7 +59,7 @@ googleAnalytics = ""
     id = "skills"
     type = "list"
     title = "Music"
-    description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back.\n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
+    description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "pic02.jpg"
@@ -86,7 +86,7 @@ googleAnalytics = ""
     id = "infos"
     type = "text"
     title = "Bass lessons"
-    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons, in English or Dutch, from my home in Tokyo. Use the contact form below to get in touch. \n\nI can help you improve your:\n\n technique<br>timing<br>sight-reading<br>music theory"
+    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons in English or Dutch from my home in Tokyo. I can help you improve your:\n\n technique<br>timing<br>sight-reading<br>music theory \n\n Use the [contact form](#contact) to get in touch. "
     # the picture is stored at static/images/
     picture = "pic03.jpg"
 
@@ -124,39 +124,45 @@ googleAnalytics = ""
     [params.footer.social_list]
       enable = true
 
-      [[params.footer.social]]
-        title = "Twitter"
-        icon = "fa-twitter"
-        link = "#"
+      # [[params.footer.social]]
+      #   title = "Twitter"
+      #   icon = "fa-twitter"
+      #   link = "#"
+
+      # [[params.footer.social]]
+      #   title = "Facebook"
+      #   icon = "fa-facebook"
+      #   link = "#"
 
       [[params.footer.social]]
-        title = "Facebook"
-        icon = "fa-facebook"
-        link = "#"
-
-      [[params.footer.social]]
-        title = "Instagramm"
+        title = "Instagram"
         icon = "fa-instagram"
-        link = "#"
+        link = "https://www.instagram.com/lidian_scale/"
+      
+      [[params.footer.social]]
+      title = "Email"
+      icon = "fa-envelope"
+      link = "mailto:info@lidian.rocks"
 
       [[params.footer.social]]
-        title = "Dribbble"
-        icon = "fa-dribbble"
-        link = "#"
+        title = "LinkedIn"
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/in/lidian-de-weert-6387a598/"
 
-      [[params.footer.social]]
-        title = "Email"
-        icon = "fa-envelope"
-        link = "#"
+      # [[params.footer.social]]
+      #   title = "Dribbble"
+      #   icon = "fa-dribbble"
+      #   link = "#"
+
 
     # copyright
     #[params.footer.copyright.notice]
 
       [[params.footer.copyright.notice]]
-        text = "© Untitled"
+        text = "© Lidian de Weert"
 
       [[params.footer.copyright.notice]]
-        text = "Design: [HTML5UP](//html5up.net)"
+        text = "Design: [HTML5UP](//html5up.net) & [Wouter Veeken](//wouter.tech)"
 
-      [[params.footer.copyright.notice]]
-        text = "Demo Images: [Unsplash](//unsplash.com/)"
+      # [[params.footer.copyright.notice]]
+      #   text = "Demo Images: [Unsplash](//unsplash.com/)"

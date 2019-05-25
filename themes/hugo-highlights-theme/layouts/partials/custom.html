@@ -10,8 +10,8 @@
       </header>
       <p>{{ with .block.description }}{{ . | markdownify }}{{ end }}</p>
     </div>
-    {{ if .next }}
+    <!-- {{ if .next }}
       <a href="#{{.next.id}}" class="goto-next scrolly">{{ with .block.buttontext }}{{ . | markdownify }}{{ end }}</a>
-    {{ end }}
+    {{ end }} -->
   </div>
 </section>
