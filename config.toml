@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://lidian.rocks"
+baseurl = "https://lidian.rocks/"
 languageCode = "en-us"
 title = "Lidian de Weert | All-round Electric Bass Player"
 theme = "hugo-highlights-theme"
