@@ -1312,11 +1312,18 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("../../images/overlay.png"), url("../../images/a7900-2.jpg");
+		background-image: url("../../images/overlay.png"), url("../../images/a7900-2-compressed.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
 	}
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+		html {
+			background-position: top left,					35% 50%;
+		}
+	}
+
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
 		-moz-animation: none !important;
