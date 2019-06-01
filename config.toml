@@ -1,150 +1,168 @@
 # Site settings
-baseurl = "https://lidian.rocks" #without ending slash
+baseurl = "https://lidian.rocks/"
 languageCode = "en-us"
-title = "Lidian de Weert"
-theme = "hugo-identity-theme"
-themesDir = "themes"
+title = "Lidian de Weert | All-round Electric Bass Player"
+theme = "hugo-highlights-theme"
 
-# Disable unnecessary kinds
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
-
-# Enter your tracking code to enable Google Analytics
-#googleAnalytics = "UA-XXXXX-Y"
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
 
 [params]
 
-  # Images settings
-  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
-  # You may place your images in corresponding folders and then set only filenames below to
-  # change page's appearance
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
 
-  # Site icons
-  favicon_ico = "favicon.ico"
-  favicon_ico_sizes = "16x16 32x32"
-  appleicon = "apple.png"
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Lidian de Weert"
+  description = "All-round Electric Bass Player"
 
-  # Additional options to supplement icons served
-  #favicon_png = "favicon.png"
-  #favicon_png_sizes = "96x96"
-  #favicon_svg = "favicon.svg"
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "info@lidian.rocks"
 
-  # Link custom assets relative to /static
-  #custom_js  = [""]
-  #custom_css = ["background.css", "icons.css"]
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.jpg and overlay.png to set the background.
+  backgroundpersection = false
 
-  # Customization switches
-  # Overwrite FontAwesome: see icons.css
-  #custom_icons = true
-  # Overwrite background: see background.css
-  #custom_background = true
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "Lidian de Weert"
+    description = "All-round Electric Bass Player"
+    buttontext = "Go"
 
-  # Personal data
-  [params.personal]
-    # If name is not set, author is used
-    name = "Lidian de Weert"
-    # Avatars can be written to images/avatars/
-    avatar = "lidian-avatar.png"
-    position = "Electric bass guitarist"
-    livesIn = "[Tokyo, Japan](#some-maps-url)"
-    scope = [
-        "Pop & Soul",
-        "Jazz & Latin",
-        "Funk & Fusion"
-      ]
-#     biography = """Jane Powers is plain awesome. He worked at Corp A and B and is open for new work.
-# Even new lines and other markdown styles are working within the bio."""
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "About"
+    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. \n\n In addition to music, I've [worked as a lawyer](https://www.linkedin.com/in/lidian-de-weert-6387a598/) specializing in intellectual property. \n\nScroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "a8003-2.jpg"
 
-  # Contact form settings
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "Music"
+    description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
+    buttontext = "next"
+    # the picture is stored at static/images/
+    picture = "pic02.jpg"
 
-  [params.contact]
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
+    [[params.block.item]]
+    # title = "Never Give Up On A Good Thing (George Benson)"
+    postID = "BxzgrwKAqH5"
+    
+    # [[params.block.item]]
+    # icon = "fa-pencil"
+    # title = "Lorem Ipsum"
+    # 
+    # [[params.block.item]]
+    # icon = "fa-code"
+    # title = "Nulla Tempus"
+    # 
+    # [[params.block.item]]
+    # icon = "fa-coffee"
+    # title = "Sed Feugiat"
+    # 
 
-    email = "lidiandeweert@gmail.com"
+  # infos section
+  [[params.block]]
+    id = "infos"
+    type = "text"
+    title = "Bass lessons"
+    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons in English or Dutch around the Suginami area. I can help you improve your:\n\n ♫ technique<br>♫ timing<br>♫ sight-reading<br>♫ music theory \n\n Use the [contact form](#contact) to get in touch. "
+    # the picture is stored at static/images/
+    picture = "pic03.jpg"
 
-    # It is possible to substitute formspring with other providers
-    # as an example the mailout plugin from caddy.
-    # Provide the post URL for the form and depending on the provider
-    # add some custom JS script to finish the implementation.
+ # custom section
+   # [[params.block]]
+   #   id = "important"
+   #   # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+   #   type = "custom"
+   #   title = "Don't forget"
+   #   description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+   #   # the picture is stored at static/images/
+   #   picture = "pic04.jpg"
 
-    #postURL = "https://example.com/mailout/"
 
-    enable = false
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
     title = "Contact"
-    namePlaceholder = "Name"
-    emailPlaceholder = "Email"
-    messagePlaceholder = "Message"
-    buttonText = "Send it"
-    success = "Thanks for your message! I'll try to get back to you as soon as possible."
-    error = "Uh-oh! There was a problem sending your message. Please contact me at lidiandeweert@gmail.com"
+    picture = "a8127.jpg"
 
-    # Google invisible captcha
-    #[params.contact.captcha]
-    #  sitekey = ""
+    [params.block.form]
+      name = "Name"
+      email = "Email address"
+      message = "Your Message"
+      buttontext = "Send"
 
+  # footer section
+  # this section includes last block and social icons
 
-    # Add optional form fields to identify contact forms.
-    #[[params.contact.fields.hidden]]
-    #  name = "someID"
-    #  value = "example.com"
-
-    #[[params.contact.fields.hidden]]
-    # Special values for name such as "page" and "site" will be autofilled
-    #  name = "page"
-
-  # Social settings
-  # You may change these with your social links or add others
-
-  # [[params.social]]
-  #   title = "Twitter"
-  #   icon = "fa-twitter"
-  #   link = "#"
-  #   target = "_blank"
-
-  [[params.social]]
-    title = "Instagram"
-    icon = "fa-instagram"
-    link = "https://www.instagram.com/lidian_scale/"
-    target = "_blank"
-
-  # [[params.social]]
-  #   title = "Facebook"
-  #   icon = "fa-facebook"
-  #   link = "https://facebook.com/lidiandeweert"
-  #   target = "_blank"
-
-  # Footer settings
   [params.footer]
-    # If copyright is not set, author is used
-    copyright = "Lidian de Weert"
+    enable = true
 
-  # Page license
-  [params.license]
-    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
-    name = "CC-BY-SA-4.0"
+    # social icons
+    [params.footer.social_list]
+      enable = true
 
-  # Credits
-  [[params.credits]]
-    # Title is used as URL text
-    title = "HTML5UP"
-    # Text will be used to explain the credit
-    text = "Design by"
-    link = "https://html5up.net"
+      # [[params.footer.social]]
+      #   title = "Twitter"
+      #   icon = "fa-twitter"
+      #   link = "#"
 
-  # Optional piwik tracking
-  #[params.analytics.piwik]
-  #  URL = "https://stats.example.com"
-  #  ID = "42"
-  #  # Track all subdomains with "*.example.com"
-  #  domain = "www.example.com"
-  #  # Optional integrity check hash
-  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+      # [[params.footer.social]]
+      #   title = "Facebook"
+      #   icon = "fa-facebook"
+      #   link = "#"
+
+      [[params.footer.social]]
+        title = "Instagram"
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/lidian_scale/"
+      
+      [[params.footer.social]]
+      title = "Email"
+      icon = "fa-envelope"
+      link = "mailto:info@lidian.rocks"
+
+      [[params.footer.social]]
+        title = "LinkedIn"
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/in/lidian-de-weert-6387a598/"
+
+      # [[params.footer.social]]
+      #   title = "Dribbble"
+      #   icon = "fa-dribbble"
+      #   link = "#"
+
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© Lidian de Weert"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net) & [Wouter Veeken](//wouter.tech)"
+
+      # [[params.footer.copyright.notice]]
+      #   text = "Demo Images: [Unsplash](//unsplash.com/)"
