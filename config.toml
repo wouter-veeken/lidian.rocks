@@ -52,7 +52,7 @@ googleAnalytics = ""
     description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. Scroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
     buttontext = "next"
     # the picture is stored at static/images/
-    picture = "pic01.jpg"
+    picture = "a8003-2.jpg"
 
   # skill section
   [[params.block]]
@@ -91,14 +91,14 @@ googleAnalytics = ""
     picture = "pic03.jpg"
 
  # custom section
-   [[params.block]]
-     id = "important"
-     # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
-     type = "custom"
-     title = "Don't forget"
-     description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
-     # the picture is stored at static/images/
-     picture = "pic04.jpg"
+   # [[params.block]]
+   #   id = "important"
+   #   # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+   #   type = "custom"
+   #   title = "Don't forget"
+   #   description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+   #   # the picture is stored at static/images/
+   #   picture = "pic04.jpg"
 
 
   # contact form
@@ -106,7 +106,7 @@ googleAnalytics = ""
     id = "contact"
     type = "contact"
     title = "Contact"
-    picture = "pic05.jpg"
+    picture = "a8127.jpg"
 
     [params.block.form]
       name = "Name"
