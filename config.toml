@@ -65,7 +65,7 @@ googleAnalytics = ""
     picture = "pic02.jpg"
 
     [[params.block.item]]
-    title = "Never Give Up On A Good Thing (George Benson)"
+    # title = "Never Give Up On A Good Thing (George Benson)"
     postID = "BxzgrwKAqH5"
     
     # [[params.block.item]]
@@ -86,7 +86,7 @@ googleAnalytics = ""
     id = "infos"
     type = "text"
     title = "Bass lessons"
-    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons in English or Dutch around the Suginami area. I can help you improve your:\n\n technique<br>timing<br>sight-reading<br>music theory \n\n Use the [contact form](#contact) to get in touch. "
+    description = "I have a degree in Jazz & Pop Bass Guitar Performance from ArtEZ (Arnhem, the Netherlands). I've worked as a private teacher and band coach.\n\n I give private lessons in English or Dutch around the Suginami area. I can help you improve your:\n\n ♫ technique<br>♫ timing<br>♫ sight-reading<br>♫ music theory \n\n Use the [contact form](#contact) to get in touch. "
     # the picture is stored at static/images/
     picture = "pic03.jpg"
 
