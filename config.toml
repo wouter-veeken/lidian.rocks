@@ -65,8 +65,8 @@ googleAnalytics = ""
     picture = "pic02.jpg"
 
     [[params.block.item]]
-    # title = "Never Give Up On A Good Thing (George Benson)"
-    postID = "BxzgrwKAqH5"
+    # title = ""
+    postID = "BzLB0iqA1G5"
     
     # [[params.block.item]]
     # icon = "fa-pencil"
