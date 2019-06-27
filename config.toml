@@ -66,7 +66,7 @@ googleAnalytics = ""
 
     [[params.block.item]]
     # title = ""
-    postID = "BzLB0iqA1G5"
+    postID = "BzLB0iqA1G5" # Instagram post to embed
     
     # [[params.block.item]]
     # icon = "fa-pencil"
