@@ -44,29 +44,46 @@ googleAnalytics = ""
     description = "All-round Electric Bass Player"
     buttontext = "Go"
 
+
   # about section
   [[params.block]]
     id = "about"
-    type = "text"
+    type = "text_about"
     title = "About"
-    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. \n\n In addition to music, I've [worked as a lawyer](https://www.linkedin.com/in/lidian-de-weert-6387a598/) specializing in intellectual property. \n\nScroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
+    description = "I'm Lidian, an electric bass player in Tokyo, Japan 🇯🇵. I'm originally from the Netherlands 🇳🇱. \n\n I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others. \n\n In addition to music, I've [worked as a lawyer](https://www.linkedin.com/in/lidian-de-weert-6387a598/) specializing in intellectual property. \n\nScroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "a8003-2.jpg"
-
-  # skill section
-  [[params.block]]
-    id = "skills"
-    type = "list"
-    title = "Music"
-    description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
-    buttontext = "next"
-    # the picture is stored at static/images/
-    picture = "pic02.jpg"
-
-    [[params.block.item]]
-    # title = ""
     postID = "BzLB0iqA1G5" # Instagram post to embed
+
+  # concerts Section
+  [[params.block]]
+    id = "concerts"
+    type = "list_dates"
+    title = "Live dates"
+    # description = ""
+    buttontext = "next"
+    
+    [[params.block.item]]
+      date = "27 July 2019, 19:00"
+      description = "Captain Kanpai & the Ginger Highballs (blues/funk)"
+      descriptionLink = "http://www.chicagoplanning.com/oilcitylive.htm"
+      locationDesc = "Oilcity, Asagaya"
+      locationMap = "https://goo.gl/maps/aFoXDsSmDqSocmjv6"
+    
+  # # music section
+  # [[params.block]]
+  #   id = "skills"
+  #   type = "list"
+  #   title = "Music"
+  #   description = "I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others."
+  #   buttontext = "next"
+  #   # the picture is stored at static/images/
+  #   picture = "pic02.jpg"
+
+    # [[params.block.item]]
+    # title = ""
+      
     
     # [[params.block.item]]
     # icon = "fa-pencil"

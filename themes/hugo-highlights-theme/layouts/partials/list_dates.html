@@ -8,9 +8,20 @@
       <header class="major">
         <h2>{{ with .block.title}}{{ . | markdownify }}{{ end }}</h2>
       </header>
+      <table class="dates"> 
+        <tr> 
+          <th>When</th> 
+          <th>Where</th> 
+          <th>What</th>
+        </tr>   
       {{ range .block.item }}
-        <h4>{{ .title }}</h4>
+      <tr>
+        <td>{{ .date}}</td>
+        <td><a href="{{ .locationMap}}" target="_blank">{{ .locationDesc}}</a></td>
+        <td><a href="{{ .descriptionLink}}" target="_blank">{{ .description}}</a></td>
+      </tr>
       {{ end }}
+    </table>
       <p>{{ with .block.description}}{{ . | markdownify }}{{ end }}</p>
       <!-- <ul class="icons-grid">
         {{ range .block.item }}
