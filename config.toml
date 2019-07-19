@@ -50,7 +50,7 @@ googleAnalytics = ""
     id = "about"
     type = "text_about"
     title = "About"
-    description = "I'm Lidian, an electric bass player in Tokyo, Japan. I'm originally from Amsterdam, the Netherlands. \n\n I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others. \n\n In addition to music, I've [worked as a lawyer](https://www.linkedin.com/in/lidian-de-weert-6387a598/) specializing in intellectual property. \n\nScroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
+    description = "I'm Lidian, an electric bass player in Tokyo, Japan 🇯🇵. I'm originally from the Netherlands 🇳🇱. \n\n I've been making music for over 20 years, starting with drums and classical guitar. At 14, I picked up the electric bass and I never looked back. I graduated from the ArtEZ School of Music in 2014. \n\n In the Netherlands, I played with various coverbands, as well as doing original work with HILIN, the Richard Hebly Tribute Band, and others. \n\n In addition to music, I've [worked as a lawyer](https://www.linkedin.com/in/lidian-de-weert-6387a598/) specializing in intellectual property. \n\nScroll down for more about me and my work. For **bookings and lessons**, use the [contact form](#contact)."
     buttontext = "next"
     # the picture is stored at static/images/
     picture = "a8003-2.jpg"
