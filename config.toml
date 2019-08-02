@@ -65,6 +65,13 @@ googleAnalytics = ""
     buttontext = "next"
     
     [[params.block.item]]
+      date = "23 November 2019, 13:00"
+      description = "Captain Kanpai & the Ginger Highballs (blues/funk)"
+      descriptionLink = "http://www.mashrecords-voyage.com/sche28.cgi"
+      locationDesc = "MASH RECORDS / マッシュレコーズ, Shinjuku"
+      locationMap = "https://goo.gl/maps/iH4aiqPvrcnVtC6m6"
+    
+    [[params.block.item]]
       date = "27 July 2019, 19:00"
       description = "Captain Kanpai & the Ginger Highballs (blues/funk)"
       descriptionLink = "http://www.chicagoplanning.com/oilcitylive.htm"
