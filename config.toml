@@ -65,6 +65,13 @@ googleAnalytics = ""
     buttontext = "next"
     
     [[params.block.item]]
+      date = "29 February 2020, 18:30"
+      description = "Captain Kanpai & the Ginger Highballs (blues/funk)"
+      descriptionLink = "http://www.mashrecords-voyage.com/sche28.cgi"
+      locationDesc = "Diglight / ディグライト, Takadanobaba"
+      locationMap = "https://goo.gl/maps/kmSLVoMdsYjtHejLA"
+    
+    [[params.block.item]]
       date = "23 November 2019, 13:00"
       description = "Captain Kanpai & the Ginger Highballs (blues/funk)"
       descriptionLink = "http://www.mashrecords-voyage.com/sche28.cgi"
